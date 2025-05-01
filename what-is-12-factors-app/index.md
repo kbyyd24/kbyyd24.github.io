@@ -4,19 +4,16 @@
 
 在学习 `Spring Cloud` 的时候，文档一开始就提到了一个概念：Twelve-Factor App。这勾起了我的好奇心，刚好有个网站用来解释这个东西，这里谈谈我的理解。 https://12factor.net[]
 
-== 什么是 Twelve-Factor App
+## 什么是 Twelve-Factor App
 
 首先，twelve-factor app 是由 `Heroku` 提出的一种用于构建 `software-as-a-service` (SaaS) 应用的方法论。但不是所有的 `SaaS` 应用都是 twelve-factor app，只有符合一些特征，才是一个 twelve-factor app。
 
-* Use *declarative* formats for setup automation, to minimize time and cost for new developers joining the project;
-+
-通过声明的方式来自动化配置，以达到最小化项目新成员的时间成本和学习成本。这一点很好理解。
+- Use *declarative* formats for setup automation, to minimize time and cost for new developers joining the project;
+  通过声明的方式来自动化配置，以达到最小化项目新成员的时间成本和学习成本。这一点很好理解。
 
-* Have a *clean contract* with the underlying operating system, offering *maximum portability* between execution environments;
-+
-和底层系统之间有明确的契约，这样就能提供最大的可移植性。
-+
-类似于我们现在推崇的使用 `docker` 来输出我们的软件，这样我们只需要 `docker` 的环境就能运行我们的软件；而不是提供一个 `jar` 包或者前端打包的压缩文件，需要我们自行安装 `java` 或者 `nginx` 才能运行。
+- Have a *clean contract* with the underlying operating system, offering *maximum portability* between execution environments;
+  和底层系统之间有明确的契约，这样就能提供最大的可移植性。
+  类似于我们现在推崇的使用 `docker` 来输出我们的软件，这样我们只需要 `docker` 的环境就能运行我们的软件；而不是提供一个 `jar` 包或者前端打包的压缩文件，需要我们自行安装 `java` 或者 `nginx` 才能运行。
 
 * Are suitable for *deployment* on modern *cloud platforms*, obviating the need for servers and systems administration;
 +
@@ -36,7 +33,7 @@
 +
 这里的“放大”，可以指部署上的水平扩容或者功能上的改进等等。
 
-== 为什么需要 Twelve-Factor App
+## 为什么需要 Twelve-Factor App
 
 在面对现代软件开发过程中，我们会遇到很多系统性的问题。`Heroku` 提出 Twelve-Factor App 的初衷，是为了增强我们对这些问题的认知，并提供专用的名次来命名这些问题，同时提出针对这些问题的广义上的解决方案。
  
@@ -44,23 +41,23 @@
 
 这些问题和解决方案，也不是随便找了一些人来闭门造车想出来的，而是邀请了直接或间接参与了大量应用的开发、部署、运维以及扩展的拥有丰富经验的 IT 从业人员参与讨论，得出了这些系统性的问题和对应的解决方案。
 
-== Twelve-Factor 是哪十二个
+## Twelve-Factor 是哪十二个
 
 Twelve-Factor App 提出了十二个方面的解决方案，这也是它的名字的由来。而每一点，官网都提供了一句话的总结和详细的描述。这里暂时简单记录一下。
 
-=== 1.Codebase
+### 1.Codebase
 
 一句话总结：一份基准代码，多次部署。
 
 https://12factor.net/codebase[英文] https://www.12factor.net/zh_cn/codebase[中文]
 
-=== 2.Dependencies
+### 2.Dependencies
 
 一句话总结：显式的声明依赖。
 
 https://12factor.net/dependencies[英文] https://www.12factor.net/zh_cn/dependencies[中文]
 
-=== 3.Config
+### 3.Config
 
 一句话总结：在部署的环境中存储配置。
 
@@ -68,7 +65,7 @@ https://12factor.net/dependencies[英文] https://www.12factor.net/zh_cn/depende
 
 https://12factor.net/config[英文] https://www.12factor.net/zh_cn/config[中文]
 
-=== 4.Backing services
+### 4.Backing services
 
 一句话总结：将后端服务当作附加资源。
 
@@ -76,7 +73,7 @@ https://12factor.net/config[英文] https://www.12factor.net/zh_cn/config[中文
 
 https://12factor.net/backing-services[英文] https://www.12factor.net/zh_cn/backing-services[中文]
 
-=== 5.Build, release run
+### 5.Build, release run
 
 一句话总结：严格分离构建、发布和运行的阶段。
 
@@ -84,19 +81,19 @@ https://12factor.net/backing-services[英文] https://www.12factor.net/zh_cn/bac
 
 https://12factor.net/build-release-run[英文] https://www.12factor.net/zh_cn/build-release-run[中文]
 
-=== 6.Processes
+### 6.Processes
 
 一句话总结：以一个或多个无状态进程运行应用。
 
 https://12factor.net/processes[英文] https://www.12factor.net/zh_cn/processes[中文]
 
-=== 7.Port binding
+### 7.Port binding
 
 一句话总结：通过绑定端口来提供服务。
 
 https://12factor.net/port-binding[英文] https://www.12factor.net/zh_cn/port-binding[中文]
 
-=== 8.Concurrency
+### 8.Concurrency
 
 一句话总结：通过进程模型来进行扩展。
 
@@ -104,7 +101,7 @@ https://12factor.net/port-binding[英文] https://www.12factor.net/zh_cn/port-bi
 
 https://12factor.net/concurrency[英文] https://www.12factor.net/zh_cn/concurrency[中文]
 
-=== 9.Disposability
+### 9.Disposability
 
 一句话总结：快速和优雅的启动、终止进程，可最大化健壮性。
 
@@ -112,19 +109,19 @@ https://12factor.net/concurrency[英文] https://www.12factor.net/zh_cn/concurre
 
 https://12factor.net/disposability[英文] https://www.12factor.net/zh_cn/disposability[中文]
 
-=== 10.Dev/prod parity
+### 10.Dev/prod parity
 
 一句话总结：尽可能的保持 Dev、staging 和 production 环境一致。
 
 https://12factor.net/dev-prod-parity[英文] https://www.12factor.net/zh_cn/dev-prod-parity[中文]
 
-=== 11.Logs
+### 11.Logs
 
 一句话总结：像对待事件流一样对待日志。
 
 https://12factor.net/logs[英文] https://www.12factor.net/zh_cn/logs[中文]
 
-=== 12.Admin processes
+### 12.Admin processes
 
 一句话总结：后台管理任务当作一次性进程运行。
 
@@ -132,6 +129,6 @@ https://12factor.net/admin-processes[英文] https://www.12factor.net/zh_cn/admi
 
 ---
 
-== 总结
+## 总结
 
 可以将 Twelve-Factor App 理解为一种构建 cloud native 应用的指导原则（方法论），按照这样的原则设计并开发出来的应用，将会十分适用于部署到类似于 `Heroku` 这样的服务中。

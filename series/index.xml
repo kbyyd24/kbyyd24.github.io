@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Series on 无糖拿铁，谢谢</title><link>https://blog.gaoyuexiang.cn/series/</link><description>Recent content in Series on 无糖拿铁，谢谢</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>blog@gaoyuexiang.cn (无糖拿铁)</managingEditor><webMaster>blog@gaoyuexiang.cn (无糖拿铁)</webMaster><copyright>CC BY-NC 4.0 CN</copyright><lastBuildDate>Fri, 14 Jul 2023 00:22:57 +0800</lastBuildDate><atom:link href="https://blog.gaoyuexiang.cn/series/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring Security</title><link>https://blog.gaoyuexiang.cn/series/spring-security-servlet/</link><pubDate>Sun, 31 May 2020 20:01:34 +0000</pubDate><author>blog@gaoyuexiang.cn (无糖拿铁)</author><guid>https://blog.gaoyuexiang.cn/series/spring-security-servlet/</guid><description>Spring Security 系列的文章列表： Spring Security 概览 Spring Security 中的身份认证 Spring Security 中的权限验证 Spring Security ACL 核心概念和组件 如何使用 Spring Security ACL</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Series on 无糖拿铁，谢谢</title><link>https://blog.gaoyuexiang.cn/series/</link><description>Recent content in Series on 无糖拿铁，谢谢</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>blog@gaoyuexiang.cn (无糖拿铁)</managingEditor><webMaster>blog@gaoyuexiang.cn (无糖拿铁)</webMaster><copyright>CC BY-NC 4.0 CN</copyright><lastBuildDate>Fri, 14 Jul 2023 00:22:57 +0800</lastBuildDate><atom:link href="https://blog.gaoyuexiang.cn/series/index.xml" rel="self" type="application/rss+xml"/><item><title>Spring Security</title><link>https://blog.gaoyuexiang.cn/series/spring-security-servlet/</link><pubDate>Sun, 31 May 2020 20:01:34 +0000</pubDate><author>blog@gaoyuexiang.cn (无糖拿铁)</author><guid>https://blog.gaoyuexiang.cn/series/spring-security-servlet/</guid><description>&lt;div class="paragraph">
+&lt;p>Spring Security 系列的文章列表：&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>&lt;a href="https://blog.gaoyuexiang.cn/spring-security-servlet-overview/">Spring Security 概览&lt;/a>&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>&lt;a href="https://blog.gaoyuexiang.cn/spring-security-authentication/">Spring Security 中的身份认证&lt;/a>&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>&lt;a href="https://blog.gaoyuexiang.cn/spring-security-authorization/">Spring Security 中的权限验证&lt;/a>&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>&lt;a href="https://blog.gaoyuexiang.cn/spring-security-acl-conception-and-component/">Spring Security ACL 核心概念和组件&lt;/a>&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>&lt;a href="https://blog.gaoyuexiang.cn/how-to-use-spring-security-acl/">如何使用 Spring Security ACL&lt;/a>&lt;/p>
+&lt;/div></description></item></channel></rss>

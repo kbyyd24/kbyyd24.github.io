@@ -1,1 +1,14 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Exec - 标签 - 无糖拿铁，谢谢</title><link>https://blog.gaoyuexiang.cn/tags/exec/</link><description>Exec - 标签 - 无糖拿铁，谢谢</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>blog@gaoyuexiang.cn (无糖拿铁)</managingEditor><webMaster>blog@gaoyuexiang.cn (无糖拿铁)</webMaster><copyright>CC BY-NC 4.0 CN</copyright><lastBuildDate>Thu, 18 Jun 2020 22:46:13 +0000</lastBuildDate><atom:link href="https://blog.gaoyuexiang.cn/tags/exec/" rel="self" type="application/rss+xml"/><item><title>你的 docker stop，它优雅吗？</title><link>https://blog.gaoyuexiang.cn/graceful-shutdown-docker-container/</link><pubDate>Thu, 18 Jun 2020 22:46:13 +0000</pubDate><author>作者</author><guid>https://blog.gaoyuexiang.cn/graceful-shutdown-docker-container/</guid><description>我们平时在使用 Docker 的时候，一般会使用 ctrl+c 或者 docker stop 的方式关闭容器。 但有时候我们可能会遇到 ctrl+c 不生效，或者 docker stop 之后要等待 10s 的情况，就像这样： 也许你会觉</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Exec - 标签 - 无糖拿铁，谢谢</title><link>https://blog.gaoyuexiang.cn/tags/exec/</link><description>Exec - 标签 - 无糖拿铁，谢谢</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>blog@gaoyuexiang.cn (无糖拿铁)</managingEditor><webMaster>blog@gaoyuexiang.cn (无糖拿铁)</webMaster><copyright>CC BY-NC 4.0 CN</copyright><lastBuildDate>Thu, 18 Jun 2020 22:46:13 +0000</lastBuildDate><atom:link href="https://blog.gaoyuexiang.cn/tags/exec/" rel="self" type="application/rss+xml"/><item><title>你的 docker stop，它优雅吗？</title><link>https://blog.gaoyuexiang.cn/graceful-shutdown-docker-container/</link><pubDate>Thu, 18 Jun 2020 22:46:13 +0000</pubDate><author>无糖拿铁</author><guid>https://blog.gaoyuexiang.cn/graceful-shutdown-docker-container/</guid><description><![CDATA[<div class="paragraph">
+<p>我们平时在使用 <code>Docker</code> 的时候，一般会使用 <code>ctrl+c</code> 或者 <code>docker stop</code> 的方式关闭容器。
+但有时候我们可能会遇到 <code>ctrl+c</code> 不生效，或者 <code>docker stop</code> 之后要等待 10s 的情况，就像这样：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+
+</div>
+</div>
+<div class="paragraph">
+<p>也许你会觉得 10s 是一个可以忍受的时间，
+但这样的问题真的只有 10s 这么简单吗？
+为什么有的时候不能立即关闭容器呢？</p>
+</div>]]></description></item></channel></rss>
